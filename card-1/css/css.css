@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Courier+Prime:ital,wght@0,400;0,700;1,700&family=Nanum+Brush+Script&family=Noto+Sans+Vai&family=Noto+Serif+Georgian:wght@100&display=swap');
+
+@font-face {
+  src: url('../font/garamond/Garamond_Bold_font.ttf');
+  src: url('../font/georgia/georgia_bold_italic.ttf');
+  src: url('../font/times-roman/OPTITimesRoman-Italic.otf');
+  src: url('../font/trebuchet-ms-2-cufonfonts/trebuc.ttf');
+  font-family: Garamond;
+  font-family: Georgia;
+  font-family: Times-New-Roman;
+  font-family: Trebuchet;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.product-text{
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  background: crimson;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box{
+  flex: 23%;
+  border: 2px dotted #c4c4c4;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.box:hover{
+  border:1px solid #c4c4c4;
+}
+.box:hover .card-name{
+  border-bottom: 1px solid #c4c4c4
+}
+.image{
+height: 250px;
+}
+.image  img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 5px;
+}
+.card-name{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 3px dotted #c4c4c4;
+}
+.card-name p a{
+
+  padding-bottom: 50px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.price{
+  padding: 5px;
+  padding-left: 11px;
+  font-size: 17px;
+}
+.price span{
+  padding-right: 5px;
+}
+span:nth-child(1){
+  color: violet;
+  font-size: 20px;
+  font-weight: bold;
+}
+span:nth-child(2){
+  color: #c4c4c4;
+  text-decoration: line-through;
+  font-size: 12px;
+}
+span:nth-child(3){
+  float: right;
+  color: #c4c4c4
+}
+
+@media screen and (max-width:1472px) {
+  .card-name{
+    height: 150px!important
+  }
+}
+@media screen and (max-width:1100px) {
+  .box{
+    flex:30%!important;
+  }
+}
+
+@media screen and (max-width:920px) {
+  .card-name{
+    height: 175px!important
+  }
+}
+
+@media screen and (max-width:800px) {
+  .card-name{
+    height: 135px!important
+  }
+}
+
+@media screen and (max-width:860px) {
+  .box{
+    flex: 35%!important;
+  }
+  .card-name{
+    height: 115px!important
+  }
+}
+
+@media screen and (max-width:600px) {
+  .box{
+    flex:100%!important;
+  }
+}
